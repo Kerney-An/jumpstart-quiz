@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jumpstart Personality Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="quiz-container">
+
+        <header>
+            <h1>Find Your Jumpstart Deck</h1>
+
+            <p>
+                Rate each statement from 1–5 and we'll match you
+                with two Magic: The Gathering Jumpstart themes.
+            </p>
+        </header>
+
+
+        <form id="quiz-form">
+
+            <section class="question">
+                <h2>1. I want to summon huge creatures.</h2>
+
+                <div class="rating">
+                    <label>
+                        <input type="radio" name="q1" value="1" required>
+                        1
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="2">
+                        2
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="3">
+                        3
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="4">
+                        4
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="5">
+                        5
+                    </label>
+                </div>
+            </section>
+
+
+            <section class="question">
+                <h2>2. I like chaotic and unpredictable gameplay.</h2>
+
+                <div class="rating">
+                    <label><input type="radio" name="q2" value="1" required>1</label>
+                    <label><input type="radio" name="q2" value="2">2</label>
+                    <label><input type="radio" name="q2" value="3">3</label>
+                    <label><input type="radio" name="q2" value="4">4</label>
+                    <label><input type="radio" name="q2" value="5">5</label>
+                </div>
+            </section>
+
+
+            <section class="question">
+                <h2>3. I want to overwhelm people with lots of creatures.</h2>
+
+                <div class="rating">
+                    <label><input type="radio" name="q3" value="1" required>1</label>
+                    <label><input type="radio" name="q3" value="2">2</label>
+                    <label><input type="radio" name="q3" value="3">3</label>
+                    <label><input type="radio" name="q3" value="4">4</label>
+                    <label><input type="radio" name="q3" value="5">5</label>
+                </div>
+            </section>
+
+
+            <button type="submit">
+                Find My Packs
+            </button>
+
+        </form>
+
+
+        <section id="results" class="hidden">
+
+            <h2>Your Jumpstart Deck</h2>
+
+            <div id="primary-result"></div>
+
+            <div class="plus">+</div>
+
+            <div id="secondary-result"></div>
+
+            <button id="restart-button">
+                Take Quiz Again
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="quiz.js"></script>
+
+</body>
+</html>
