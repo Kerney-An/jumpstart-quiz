@@ -18,77 +18,19 @@
 
             <p>
                 Rate each statement from 1–5 and we'll match you
-                with two Magic: The Gathering Jumpstart themes.
+                with two Magic: The Gathering Foundations Jumpstart themes.
             </p>
         </header>
 
-
         <form id="quiz-form">
 
-            <section class="question">
-                <h2>1. I want to summon huge creatures.</h2>
-
-                <div class="rating">
-                    <label>
-                        <input type="radio" name="q1" value="1" required>
-                        1
-                    </label>
-
-                    <label>
-                        <input type="radio" name="q1" value="2">
-                        2
-                    </label>
-
-                    <label>
-                        <input type="radio" name="q1" value="3">
-                        3
-                    </label>
-
-                    <label>
-                        <input type="radio" name="q1" value="4">
-                        4
-                    </label>
-
-                    <label>
-                        <input type="radio" name="q1" value="5">
-                        5
-                    </label>
-                </div>
-            </section>
-
-
-            <section class="question">
-                <h2>2. I like chaotic and unpredictable gameplay.</h2>
-
-                <div class="rating">
-                    <label><input type="radio" name="q2" value="1" required>1</label>
-                    <label><input type="radio" name="q2" value="2">2</label>
-                    <label><input type="radio" name="q2" value="3">3</label>
-                    <label><input type="radio" name="q2" value="4">4</label>
-                    <label><input type="radio" name="q2" value="5">5</label>
-                </div>
-            </section>
-
-
-            <section class="question">
-                <h2>3. I want to overwhelm people with lots of creatures.</h2>
-
-                <div class="rating">
-                    <label><input type="radio" name="q3" value="1" required>1</label>
-                    <label><input type="radio" name="q3" value="2">2</label>
-                    <label><input type="radio" name="q3" value="3">3</label>
-                    <label><input type="radio" name="q3" value="4">4</label>
-                    <label><input type="radio" name="q3" value="5">5</label>
-                </div>
-            </section>
-
+            <div id="quiz-questions"></div>
 
             <button type="submit">
                 Find My Packs
             </button>
 
         </form>
-
 
         <section id="results" class="hidden">
 
@@ -100,7 +42,12 @@
 
             <div id="secondary-result"></div>
 
-            <button id="restart-button">
+            <section class="all-results">
+                <h3>All Results</h3>
+                <div id="all-results-list"></div>
+            </section>
+
+            <button id="restart-button" type="button">
                 Take Quiz Again
             </button>
 
@@ -108,8 +55,7 @@
 
     </main>
 
-
-    <script src="quiz.js"></script>
+    <script type="module" src="js/quiz.js"></script>
 
 </body>
 </html>
